@@ -1,0 +1,19 @@
+{
+  "all_checks_passed": true,
+  "wide_profiles": 41625,
+  "long_rows": 124875,
+  "training_profiles": 29339,
+  "validation_profiles": 5980,
+  "test_profiles": 6306,
+  "schedule_cutoffs_verified": 20,
+  "source_feature_windows_independently_verified": 144,
+  "checks": [
+    "unique customer-date-history combinations",
+    "full long/wide equality",
+    "20 cutoff customer, buyer, gross totals match Milestone 2",
+    "30/60/90 nested purchase history",
+    "date-based source spot checks",
+    "shared future target per customer and cutoff"
+  ],
+  "no_ml_training": true
+}

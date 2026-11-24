@@ -1,0 +1,185 @@
+{
+  "source_file": "online_retail_II.xlsx",
+  "sheet_counts": {
+    "Year 2009-2010": {
+      "rows": 525461,
+      "missing_customer_id": 107927,
+      "valid_sale_rows": 407664,
+      "min_date": "2009-12-01",
+      "max_date": "2010-12-09"
+    },
+    "Year 2010-2011": {
+      "rows": 519387,
+      "missing_customer_id": 127360,
+      "valid_sale_rows": 383381,
+      "min_date": "2010-12-10",
+      "max_date": "2011-12-09"
+    }
+  },
+  "total_rows": 1044848,
+  "missing_customer_id_rows": 235287,
+  "nonpositive_quantity_rows": 22557,
+  "nonpositive_price_rows": 6029,
+  "cancelled_invoice_rows": 19165,
+  "valid_sale_rows": 791045,
+  "invalid_date_rows": 0,
+  "valid_sales_gross_amount": 17431551.177995842,
+  "duplicate_cross_sheet_rows_skipped": 22523,
+  "raw_rows_including_overlap": 1067371,
+  "overall_min_date": "2009-12-01",
+  "overall_max_date": "2011-12-09",
+  "valid_unique_customers": 5878,
+  "valid_unique_customer_invoice_pairs": 36969,
+  "customers_with_2plus_orders": 4255,
+  "customers_with_5plus_orders": 2161,
+  "monthly_valid_sale_rows": {
+    "2009-12": 30754,
+    "2010-01": 21775,
+    "2010-02": 23367,
+    "2010-03": 32301,
+    "2010-04": 27235,
+    "2010-05": 28644,
+    "2010-06": 31188,
+    "2010-07": 27032,
+    "2010-08": 26392,
+    "2010-09": 34599,
+    "2010-10": 49561,
+    "2010-11": 60312,
+    "2010-12": 26157,
+    "2011-01": 21229,
+    "2011-02": 19927,
+    "2011-03": 27175,
+    "2011-04": 22642,
+    "2011-05": 28320,
+    "2011-06": 27185,
+    "2011-07": 26825,
+    "2011-08": 27007,
+    "2011-09": 40028,
+    "2011-10": 49554,
+    "2011-11": 64531,
+    "2011-12": 17305
+  },
+  "valid_unique_customer_days": 33107,
+  "candidate_cutoffs_30day": [
+    {
+      "cutoff": "2010-04-01",
+      "eligible_customers_past90d": 1803,
+      "positive_next30d": 584,
+      "positive_fraction": 0.3239
+    },
+    {
+      "cutoff": "2010-05-01",
+      "eligible_customers_past90d": 1959,
+      "positive_next30d": 622,
+      "positive_fraction": 0.3175
+    },
+    {
+      "cutoff": "2010-05-31",
+      "eligible_customers_past90d": 2033,
+      "positive_next30d": 639,
+      "positive_fraction": 0.3143
+    },
+    {
+      "cutoff": "2010-06-30",
+      "eligible_customers_past90d": 2028,
+      "positive_next30d": 640,
+      "positive_fraction": 0.3156
+    },
+    {
+      "cutoff": "2010-07-30",
+      "eligible_customers_past90d": 2006,
+      "positive_next30d": 600,
+      "positive_fraction": 0.2991
+    },
+    {
+      "cutoff": "2010-08-29",
+      "eligible_customers_past90d": 1937,
+      "positive_next30d": 644,
+      "positive_fraction": 0.3325
+    },
+    {
+      "cutoff": "2010-09-28",
+      "eligible_customers_past90d": 1985,
+      "positive_next30d": 781,
+      "positive_fraction": 0.3935
+    },
+    {
+      "cutoff": "2010-10-28",
+      "eligible_customers_past90d": 2447,
+      "positive_next30d": 972,
+      "positive_fraction": 0.3972
+    },
+    {
+      "cutoff": "2010-11-27",
+      "eligible_customers_past90d": 2840,
+      "positive_next30d": 796,
+      "positive_fraction": 0.2803
+    },
+    {
+      "cutoff": "2010-12-27",
+      "eligible_customers_past90d": 2750,
+      "positive_next30d": 486,
+      "positive_fraction": 0.1767
+    },
+    {
+      "cutoff": "2011-01-26",
+      "eligible_customers_past90d": 2233,
+      "positive_next30d": 532,
+      "positive_fraction": 0.2382
+    },
+    {
+      "cutoff": "2011-02-25",
+      "eligible_customers_past90d": 1735,
+      "positive_next30d": 473,
+      "positive_fraction": 0.2726
+    },
+    {
+      "cutoff": "2011-03-27",
+      "eligible_customers_past90d": 1680,
+      "positive_next30d": 505,
+      "positive_fraction": 0.3006
+    },
+    {
+      "cutoff": "2011-04-26",
+      "eligible_customers_past90d": 1903,
+      "positive_next30d": 677,
+      "positive_fraction": 0.3558
+    },
+    {
+      "cutoff": "2011-05-26",
+      "eligible_customers_past90d": 1980,
+      "positive_next30d": 638,
+      "positive_fraction": 0.3222
+    },
+    {
+      "cutoff": "2011-06-25",
+      "eligible_customers_past90d": 2014,
+      "positive_next30d": 593,
+      "positive_fraction": 0.2944
+    },
+    {
+      "cutoff": "2011-07-25",
+      "eligible_customers_past90d": 1986,
+      "positive_next30d": 640,
+      "positive_fraction": 0.3223
+    },
+    {
+      "cutoff": "2011-08-24",
+      "eligible_customers_past90d": 1929,
+      "positive_next30d": 655,
+      "positive_fraction": 0.3396
+    },
+    {
+      "cutoff": "2011-09-23",
+      "eligible_customers_past90d": 2006,
+      "positive_next30d": 734,
+      "positive_fraction": 0.3659
+    },
+    {
+      "cutoff": "2011-10-23",
+      "eligible_customers_past90d": 2371,
+      "positive_next30d": 998,
+      "positive_fraction": 0.4209
+    }
+  ]
+}

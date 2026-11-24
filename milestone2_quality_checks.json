@@ -1,0 +1,314 @@
+{
+  "source_file": "online_retail_II.xlsx",
+  "sheet_raw_data_rows": {
+    "Year 2009-2010": 525461,
+    "Year 2010-2011": 541910
+  },
+  "raw_data_rows": 1067371,
+  "exact_cross_sheet_overlap_dropped": 22523,
+  "cross_sheet_overlap_unmatched": 0,
+  "sheet1_overlap_rows": 22523,
+  "valid_positive_sale_rows": 791045,
+  "exclusion_reason_priority": {
+    "cancellation_invoice": 18446,
+    "missing_customer_id": 235287,
+    "nonpositive_price": 70
+  },
+  "invalid_date_rows": 0,
+  "retained_exact_duplicate_line_signatures": 11620,
+  "earliest_date": "2009-12-01",
+  "latest_date": "2011-12-09",
+  "notes": [
+    "Exclusion reasons are mutually exclusive and prioritized.",
+    "Retain identical line items inside a source worksheet; they may represent valid repeated purchase lines.",
+    "Gross positive invoiced sales: no refund or cancellation netting; NOT net revenue or profit.",
+    "Unit price normalized to 4 decimal places from Excel floating-point text; checked absolute difference under 1e-7 GBP.",
+    "Calendar dates used; time-of-day discarded for midnight-cutoff analyses."
+  ],
+  "overlap_check": "passed: matching transaction multisets, no unmatched rows",
+  "retained_source_rows": 1044848,
+  "unique_customers": 5878,
+  "unique_customer_invoice_pairs": 36969,
+  "retained_distinct_customer_dates": 33107,
+  "valid_source_rows_by_sheet": {
+    "Year 2009-2010": 407664,
+    "Year 2010-2011": 383381
+  },
+  "monthly_positive_sale_rows": {
+    "2009-12": 30754,
+    "2010-01": 21775,
+    "2010-02": 23367,
+    "2010-03": 32301,
+    "2010-04": 27235,
+    "2010-05": 28644,
+    "2010-06": 31188,
+    "2010-07": 27032,
+    "2010-08": 26392,
+    "2010-09": 34599,
+    "2010-10": 49561,
+    "2010-11": 60312,
+    "2010-12": 26157,
+    "2011-01": 21229,
+    "2011-02": 19927,
+    "2011-03": 27175,
+    "2011-04": 22642,
+    "2011-05": 28320,
+    "2011-06": 27185,
+    "2011-07": 26825,
+    "2011-08": 27007,
+    "2011-09": 40028,
+    "2011-10": 49554,
+    "2011-11": 64531,
+    "2011-12": 17305
+  },
+  "invalid_date_examples": [],
+  "cutoff_rows": [
+    {
+      "cutoff": "2010-04-01",
+      "history_start_90d": "2010-01-01",
+      "outcome_start": "2010-04-01",
+      "outcome_end_exclusive": "2010-05-01",
+      "split": "train",
+      "eligible_customers": 1803,
+      "customers_with_positive_future_sales": 584,
+      "share_positive_future_sales": 0.3239,
+      "gross_future_sales_gbp": "440615.4410"
+    },
+    {
+      "cutoff": "2010-05-01",
+      "history_start_90d": "2010-01-31",
+      "outcome_start": "2010-05-01",
+      "outcome_end_exclusive": "2010-05-31",
+      "split": "train",
+      "eligible_customers": 1959,
+      "customers_with_positive_future_sales": 622,
+      "share_positive_future_sales": 0.31751,
+      "gross_future_sales_gbp": "443912.8700"
+    },
+    {
+      "cutoff": "2010-05-31",
+      "history_start_90d": "2010-03-02",
+      "outcome_start": "2010-05-31",
+      "outcome_end_exclusive": "2010-06-30",
+      "split": "train",
+      "eligible_customers": 2033,
+      "customers_with_positive_future_sales": 639,
+      "share_positive_future_sales": 0.31431,
+      "gross_future_sales_gbp": "437192.7800"
+    },
+    {
+      "cutoff": "2010-06-30",
+      "history_start_90d": "2010-04-01",
+      "outcome_start": "2010-06-30",
+      "outcome_end_exclusive": "2010-07-30",
+      "split": "train",
+      "eligible_customers": 2028,
+      "customers_with_positive_future_sales": 640,
+      "share_positive_future_sales": 0.31558,
+      "gross_future_sales_gbp": "477095.2000"
+    },
+    {
+      "cutoff": "2010-07-30",
+      "history_start_90d": "2010-05-01",
+      "outcome_start": "2010-07-30",
+      "outcome_end_exclusive": "2010-08-29",
+      "split": "train",
+      "eligible_customers": 2006,
+      "customers_with_positive_future_sales": 600,
+      "share_positive_future_sales": 0.2991,
+      "gross_future_sales_gbp": "454946.9200"
+    },
+    {
+      "cutoff": "2010-08-29",
+      "history_start_90d": "2010-05-31",
+      "outcome_start": "2010-08-29",
+      "outcome_end_exclusive": "2010-09-28",
+      "split": "train",
+      "eligible_customers": 1937,
+      "customers_with_positive_future_sales": 644,
+      "share_positive_future_sales": 0.33247,
+      "gross_future_sales_gbp": "507561.1610"
+    },
+    {
+      "cutoff": "2010-09-28",
+      "history_start_90d": "2010-06-30",
+      "outcome_start": "2010-09-28",
+      "outcome_end_exclusive": "2010-10-28",
+      "split": "train",
+      "eligible_customers": 1985,
+      "customers_with_positive_future_sales": 781,
+      "share_positive_future_sales": 0.39345,
+      "gross_future_sales_gbp": "682936.3700"
+    },
+    {
+      "cutoff": "2010-10-28",
+      "history_start_90d": "2010-07-30",
+      "outcome_start": "2010-10-28",
+      "outcome_end_exclusive": "2010-11-27",
+      "split": "train",
+      "eligible_customers": 2447,
+      "customers_with_positive_future_sales": 972,
+      "share_positive_future_sales": 0.39722,
+      "gross_future_sales_gbp": "840088.1020"
+    },
+    {
+      "cutoff": "2010-11-27",
+      "history_start_90d": "2010-08-29",
+      "outcome_start": "2010-11-27",
+      "outcome_end_exclusive": "2010-12-27",
+      "split": "train",
+      "eligible_customers": 2840,
+      "customers_with_positive_future_sales": 796,
+      "share_positive_future_sales": 0.28028,
+      "gross_future_sales_gbp": "623669.2000"
+    },
+    {
+      "cutoff": "2010-12-27",
+      "history_start_90d": "2010-09-28",
+      "outcome_start": "2010-12-27",
+      "outcome_end_exclusive": "2011-01-26",
+      "split": "train",
+      "eligible_customers": 2750,
+      "customers_with_positive_future_sales": 486,
+      "share_positive_future_sales": 0.17673,
+      "gross_future_sales_gbp": "332973.3600"
+    },
+    {
+      "cutoff": "2011-01-26",
+      "history_start_90d": "2010-10-28",
+      "outcome_start": "2011-01-26",
+      "outcome_end_exclusive": "2011-02-25",
+      "split": "train",
+      "eligible_customers": 2233,
+      "customers_with_positive_future_sales": 532,
+      "share_positive_future_sales": 0.23824,
+      "gross_future_sales_gbp": "369463.9900"
+    },
+    {
+      "cutoff": "2011-02-25",
+      "history_start_90d": "2010-11-27",
+      "outcome_start": "2011-02-25",
+      "outcome_end_exclusive": "2011-03-27",
+      "split": "train",
+      "eligible_customers": 1735,
+      "customers_with_positive_future_sales": 473,
+      "share_positive_future_sales": 0.27262,
+      "gross_future_sales_gbp": "334071.3500"
+    },
+    {
+      "cutoff": "2011-03-27",
+      "history_start_90d": "2010-12-27",
+      "outcome_start": "2011-03-27",
+      "outcome_end_exclusive": "2011-04-26",
+      "split": "train",
+      "eligible_customers": 1680,
+      "customers_with_positive_future_sales": 505,
+      "share_positive_future_sales": 0.3006,
+      "gross_future_sales_gbp": "350207.7800"
+    },
+    {
+      "cutoff": "2011-04-26",
+      "history_start_90d": "2011-01-26",
+      "outcome_start": "2011-04-26",
+      "outcome_end_exclusive": "2011-05-26",
+      "split": "train",
+      "eligible_customers": 1903,
+      "customers_with_positive_future_sales": 677,
+      "share_positive_future_sales": 0.35575,
+      "gross_future_sales_gbp": "512122.7400"
+    },
+    {
+      "cutoff": "2011-05-26",
+      "history_start_90d": "2011-02-25",
+      "outcome_start": "2011-05-26",
+      "outcome_end_exclusive": "2011-06-25",
+      "split": "validation",
+      "eligible_customers": 1980,
+      "customers_with_positive_future_sales": 638,
+      "share_positive_future_sales": 0.32222,
+      "gross_future_sales_gbp": "452216.5600"
+    },
+    {
+      "cutoff": "2011-06-25",
+      "history_start_90d": "2011-03-27",
+      "outcome_start": "2011-06-25",
+      "outcome_end_exclusive": "2011-07-25",
+      "split": "validation",
+      "eligible_customers": 2014,
+      "customers_with_positive_future_sales": 593,
+      "share_positive_future_sales": 0.29444,
+      "gross_future_sales_gbp": "425910.1200"
+    },
+    {
+      "cutoff": "2011-07-25",
+      "history_start_90d": "2011-04-26",
+      "outcome_start": "2011-07-25",
+      "outcome_end_exclusive": "2011-08-24",
+      "split": "validation",
+      "eligible_customers": 1986,
+      "customers_with_positive_future_sales": 640,
+      "share_positive_future_sales": 0.32226,
+      "gross_future_sales_gbp": "540401.5900"
+    },
+    {
+      "cutoff": "2011-08-24",
+      "history_start_90d": "2011-05-26",
+      "outcome_start": "2011-08-24",
+      "outcome_end_exclusive": "2011-09-23",
+      "split": "test",
+      "eligible_customers": 1929,
+      "customers_with_positive_future_sales": 655,
+      "share_positive_future_sales": 0.33955,
+      "gross_future_sales_gbp": "614897.5500"
+    },
+    {
+      "cutoff": "2011-09-23",
+      "history_start_90d": "2011-06-25",
+      "outcome_start": "2011-09-23",
+      "outcome_end_exclusive": "2011-10-23",
+      "split": "test",
+      "eligible_customers": 2006,
+      "customers_with_positive_future_sales": 734,
+      "share_positive_future_sales": 0.3659,
+      "gross_future_sales_gbp": "696614.0200"
+    },
+    {
+      "cutoff": "2011-10-23",
+      "history_start_90d": "2011-07-25",
+      "outcome_start": "2011-10-23",
+      "outcome_end_exclusive": "2011-11-22",
+      "split": "test",
+      "eligible_customers": 2371,
+      "customers_with_positive_future_sales": 998,
+      "share_positive_future_sales": 0.42092,
+      "gross_future_sales_gbp": "809309.1300"
+    }
+  ],
+  "split_overview": {
+    "train": {
+      "first_cutoff": "2010-04-01",
+      "last_cutoff": "2011-04-26",
+      "number_of_cutoffs": 14,
+      "customer_snapshots": 29339,
+      "positive_outcome_snapshots": 8951,
+      "unique_customer_snapshots_not_independent": true
+    },
+    "validation": {
+      "first_cutoff": "2011-05-26",
+      "last_cutoff": "2011-07-25",
+      "number_of_cutoffs": 3,
+      "customer_snapshots": 5980,
+      "positive_outcome_snapshots": 1871,
+      "unique_customer_snapshots_not_independent": true
+    },
+    "test": {
+      "first_cutoff": "2011-08-24",
+      "last_cutoff": "2011-10-23",
+      "number_of_cutoffs": 3,
+      "customer_snapshots": 6306,
+      "positive_outcome_snapshots": 2387,
+      "unique_customer_snapshots_not_independent": true
+    }
+  },
+  "date_checks": "passed: no future label windows overlapping later split starts; 90d history complete; 30d labels in source bounds"
+}

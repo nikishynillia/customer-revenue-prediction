@@ -1,0 +1,1136 @@
+{
+  "completed": "milestone5_heldout_test_complete",
+  "test_cutoffs": [
+    "2011-08-24",
+    "2011-09-23",
+    "2011-10-23"
+  ],
+  "test_customer_date_profiles_per_window": 6306,
+  "unique_customers_in_test": 2885,
+  "actual_sales_total_gbp": 2120820.7,
+  "zero_spending_profile_share": 0.6214716143355534,
+  "model_files_sha256_before_and_after_equal": true,
+  "selected_hyperparams_unchanged": true,
+  "input_features": [
+    "historical_spend_gbp",
+    "orders",
+    "recency_days",
+    "average_order_value_gbp",
+    "distinct_products"
+  ],
+  "target": "future_30d_spending_gbp",
+  "training_performed_in_m5": false,
+  "results": [
+    {
+      "window_days": 30,
+      "method": "Always predict \u00a30",
+      "n": 6306,
+      "mae_gbp": 336.3179035838884,
+      "rmse_gbp": 1830.9751021106563,
+      "median_absolute_error_gbp": 0.0,
+      "r2": -0.034917307446211465,
+      "mean_prediction_gbp": 0.0,
+      "mean_actual_gbp": 336.3179035838884,
+      "prediction_bias_gbp": -336.3179035838884,
+      "zero_future_purchase_fraction": 0.6214716143355534,
+      "top_decile": {
+        "k": 631,
+        "capture": 0.12306695233595183,
+        "overlap_with_true_top10": 0.098256735340729
+      }
+    },
+    {
+      "window_days": 30,
+      "method": "Historical spending baseline",
+      "n": 6306,
+      "mae_gbp": 418.09023993022515,
+      "rmse_gbp": 1698.8556531467082,
+      "median_absolute_error_gbp": 176.95499999999998,
+      "r2": 0.10904918008084652,
+      "mean_prediction_gbp": 399.4760153821757,
+      "mean_actual_gbp": 336.3179035838884,
+      "prediction_bias_gbp": 63.15811179828735,
+      "zero_future_purchase_fraction": 0.6214716143355534,
+      "top_decile": {
+        "k": 631,
+        "capture": 0.4626599127403838,
+        "overlap_with_true_top10": 0.3264659270998415
+      }
+    },
+    {
+      "window_days": 30,
+      "method": "Ridge regression",
+      "n": 6306,
+      "mae_gbp": 348.15476170495964,
+      "rmse_gbp": 1486.1638864745653,
+      "median_absolute_error_gbp": 135.8969076317132,
+      "r2": 0.3181730235159078,
+      "mean_prediction_gbp": 265.12414414994174,
+      "mean_actual_gbp": 336.3179035838884,
+      "prediction_bias_gbp": -71.1937594339466,
+      "zero_future_purchase_fraction": 0.6214716143355534,
+      "top_decile": {
+        "k": 631,
+        "capture": 0.4728429423571733,
+        "overlap_with_true_top10": 0.3375594294770206
+      }
+    },
+    {
+      "window_days": 30,
+      "method": "Random Forest",
+      "n": 6306,
+      "mae_gbp": 347.3467050184286,
+      "rmse_gbp": 1429.989921582536,
+      "median_absolute_error_gbp": 126.45605722161729,
+      "r2": 0.36874224612998174,
+      "mean_prediction_gbp": 256.97253095556783,
+      "mean_actual_gbp": 336.3179035838884,
+      "prediction_bias_gbp": -79.34537262832053,
+      "zero_future_purchase_fraction": 0.6214716143355534,
+      "top_decile": {
+        "k": 631,
+        "capture": 0.46938374375542447,
+        "overlap_with_true_top10": 0.3232963549920761
+      }
+    },
+    {
+      "window_days": 60,
+      "method": "Always predict \u00a30",
+      "n": 6306,
+      "mae_gbp": 336.3179035838884,
+      "rmse_gbp": 1830.9751021106563,
+      "median_absolute_error_gbp": 0.0,
+      "r2": -0.034917307446211465,
+      "mean_prediction_gbp": 0.0,
+      "mean_actual_gbp": 336.3179035838884,
+      "prediction_bias_gbp": -336.3179035838884,
+      "zero_future_purchase_fraction": 0.6214716143355534,
+      "top_decile": {
+        "k": 631,
+        "capture": 0.12306695233595183,
+        "overlap_with_true_top10": 0.098256735340729
+      }
+    },
+    {
+      "window_days": 60,
+      "method": "Historical spending baseline",
+      "n": 6306,
+      "mae_gbp": 358.06031335236287,
+      "rmse_gbp": 1465.0877108167397,
+      "median_absolute_error_gbp": 161.58,
+      "r2": 0.3373746853574623,
+      "mean_prediction_gbp": 362.91873723437993,
+      "mean_actual_gbp": 336.3179035838884,
+      "prediction_bias_gbp": 26.600833650491598,
+      "zero_future_purchase_fraction": 0.6214716143355534,
+      "top_decile": {
+        "k": 631,
+        "capture": 0.5299452895758703,
+        "overlap_with_true_top10": 0.40729001584786056
+      }
+    },
+    {
+      "window_days": 60,
+      "method": "Ridge regression",
+      "n": 6306,
+      "mae_gbp": 319.2819177177254,
+      "rmse_gbp": 1417.6026781033001,
+      "median_absolute_error_gbp": 117.53132968717532,
+      "r2": 0.3796313791245087,
+      "mean_prediction_gbp": 255.56558904641557,
+      "mean_actual_gbp": 336.3179035838884,
+      "prediction_bias_gbp": -80.7523145374728,
+      "zero_future_purchase_fraction": 0.6214716143355534,
+      "top_decile": {
+        "k": 631,
+        "capture": 0.5331926833795992,
+        "overlap_with_true_top10": 0.4247226624405705
+      }
+    },
+    {
+      "window_days": 60,
+      "method": "Random Forest",
+      "n": 6306,
+      "mae_gbp": 323.19271131860404,
+      "rmse_gbp": 1398.7814292311957,
+      "median_absolute_error_gbp": 119.26944884757027,
+      "r2": 0.39599506352314695,
+      "mean_prediction_gbp": 249.49620701585,
+      "mean_actual_gbp": 336.3179035838884,
+      "prediction_bias_gbp": -86.82169656803836,
+      "zero_future_purchase_fraction": 0.6214716143355534,
+      "top_decile": {
+        "k": 631,
+        "capture": 0.5357722366629106,
+        "overlap_with_true_top10": 0.3977812995245642
+      }
+    },
+    {
+      "window_days": 90,
+      "method": "Always predict \u00a30",
+      "n": 6306,
+      "mae_gbp": 336.3179035838884,
+      "rmse_gbp": 1830.9751021106563,
+      "median_absolute_error_gbp": 0.0,
+      "r2": -0.034917307446211465,
+      "mean_prediction_gbp": 0.0,
+      "mean_actual_gbp": 336.3179035838884,
+      "prediction_bias_gbp": -336.3179035838884,
+      "zero_future_purchase_fraction": 0.6214716143355534,
+      "top_decile": {
+        "k": 631,
+        "capture": 0.12306695233595183,
+        "overlap_with_true_top10": 0.098256735340729
+      }
+    },
+    {
+      "window_days": 90,
+      "method": "Historical spending baseline",
+      "n": 6306,
+      "mae_gbp": 332.99184379955597,
+      "rmse_gbp": 1323.2243238324759,
+      "median_absolute_error_gbp": 146.455,
+      "r2": 0.4594850336781844,
+      "mean_prediction_gbp": 340.305150914473,
+      "mean_actual_gbp": 336.3179035838884,
+      "prediction_bias_gbp": 3.9872473305846237,
+      "zero_future_purchase_fraction": 0.6214716143355534,
+      "top_decile": {
+        "k": 631,
+        "capture": 0.5630899538089194,
+        "overlap_with_true_top10": 0.4437400950871632
+      }
+    },
+    {
+      "window_days": 90,
+      "method": "Ridge regression",
+      "n": 6306,
+      "mae_gbp": 304.4975883294377,
+      "rmse_gbp": 1339.4942074846624,
+      "median_absolute_error_gbp": 103.4089078051232,
+      "r2": 0.44611136743887947,
+      "mean_prediction_gbp": 244.918514956492,
+      "mean_actual_gbp": 336.3179035838884,
+      "prediction_bias_gbp": -91.39938862739638,
+      "zero_future_purchase_fraction": 0.6214716143355534,
+      "top_decile": {
+        "k": 631,
+        "capture": 0.5654019078557654,
+        "overlap_with_true_top10": 0.4643423137876387
+      }
+    },
+    {
+      "window_days": 90,
+      "method": "Random Forest",
+      "n": 6306,
+      "mae_gbp": 305.7872848970898,
+      "rmse_gbp": 1367.6110764485259,
+      "median_absolute_error_gbp": 117.41554654899663,
+      "r2": 0.42261434260327246,
+      "mean_prediction_gbp": 240.81157899447567,
+      "mean_actual_gbp": 336.3179035838884,
+      "prediction_bias_gbp": -95.50632458941267,
+      "zero_future_purchase_fraction": 0.6214716143355534,
+      "top_decile": {
+        "k": 631,
+        "capture": 0.5655429381653999,
+        "overlap_with_true_top10": 0.45166402535657685
+      }
+    }
+  ],
+  "per_date_results": [
+    {
+      "prediction_date": "2011-08-24",
+      "window_days": 30,
+      "method": "Always predict \u00a30",
+      "n": 1929,
+      "mae_gbp": 318.7649300155521,
+      "rmse_gbp": 2264.2529305683133,
+      "median_absolute_error_gbp": 0.0,
+      "r2": -0.020220184049791312,
+      "mean_prediction_gbp": 0.0,
+      "mean_actual_gbp": 318.7649300155521,
+      "prediction_bias_gbp": -318.7649300155521,
+      "zero_future_purchase_fraction": 0.6604458268532919,
+      "top_decile": {
+        "k": 193,
+        "capture": 0.0739423014451757,
+        "overlap_with_true_top10": 0.10362694300518134
+      }
+    },
+    {
+      "prediction_date": "2011-09-23",
+      "window_days": 30,
+      "method": "Always predict \u00a30",
+      "n": 2006,
+      "mae_gbp": 347.26521435692916,
+      "rmse_gbp": 1909.411501978825,
+      "median_absolute_error_gbp": 0.0,
+      "r2": -0.034208301803463126,
+      "mean_prediction_gbp": 0.0,
+      "mean_actual_gbp": 347.26521435692916,
+      "prediction_bias_gbp": -347.26521435692916,
+      "zero_future_purchase_fraction": 0.634097706879362,
+      "top_decile": {
+        "k": 201,
+        "capture": 0.15347936867535342,
+        "overlap_with_true_top10": 0.09950248756218906
+      }
+    },
+    {
+      "prediction_date": "2011-10-23",
+      "window_days": 30,
+      "method": "Always predict \u00a30",
+      "n": 2371,
+      "mae_gbp": 341.3366216786166,
+      "rmse_gbp": 1288.664870603944,
+      "median_absolute_error_gbp": 0.0,
+      "r2": -0.07545313372800222,
+      "mean_prediction_gbp": 0.0,
+      "mean_actual_gbp": 341.3366216786166,
+      "prediction_bias_gbp": -341.3366216786166,
+      "zero_future_purchase_fraction": 0.5790805567271193,
+      "top_decile": {
+        "k": 238,
+        "capture": 0.13384519707568354,
+        "overlap_with_true_top10": 0.1092436974789916
+      }
+    },
+    {
+      "prediction_date": "2011-08-24",
+      "window_days": 30,
+      "method": "Historical spending baseline",
+      "n": 1929,
+      "mae_gbp": 380.41909331259717,
+      "rmse_gbp": 1833.2193071124639,
+      "median_absolute_error_gbp": 127.95,
+      "r2": 0.3312360113295497,
+      "mean_prediction_gbp": 354.9032042509072,
+      "mean_actual_gbp": 318.7649300155521,
+      "prediction_bias_gbp": 36.138274235355105,
+      "zero_future_purchase_fraction": 0.6604458268532919,
+      "top_decile": {
+        "k": 193,
+        "capture": 0.5296186494807144,
+        "overlap_with_true_top10": 0.37305699481865284
+      }
+    },
+    {
+      "prediction_date": "2011-09-23",
+      "window_days": 30,
+      "method": "Historical spending baseline",
+      "n": 2006,
+      "mae_gbp": 436.7629212362911,
+      "rmse_gbp": 1896.921291113908,
+      "median_absolute_error_gbp": 185.87,
+      "r2": -0.020722229682148763,
+      "mean_prediction_gbp": 415.08636091724827,
+      "mean_actual_gbp": 347.26521435692916,
+      "prediction_bias_gbp": 67.82114656031905,
+      "zero_future_purchase_fraction": 0.634097706879362,
+      "top_decile": {
+        "k": 201,
+        "capture": 0.4375910924101127,
+        "overlap_with_true_top10": 0.24875621890547264
+      }
+    },
+    {
+      "prediction_date": "2011-10-23",
+      "window_days": 30,
+      "method": "Historical spending baseline",
+      "n": 2371,
+      "mae_gbp": 432.940616617461,
+      "rmse_gbp": 1377.4752301580957,
+      "median_absolute_error_gbp": 205.53999999999996,
+      "r2": -0.22879406814808778,
+      "mean_prediction_gbp": 422.5323627161535,
+      "mean_actual_gbp": 341.3366216786166,
+      "prediction_bias_gbp": 81.1957410375369,
+      "zero_future_purchase_fraction": 0.5790805567271193,
+      "top_decile": {
+        "k": 238,
+        "capture": 0.42816967850097043,
+        "overlap_with_true_top10": 0.3403361344537815
+      }
+    },
+    {
+      "prediction_date": "2011-08-24",
+      "window_days": 30,
+      "method": "Ridge regression",
+      "n": 1929,
+      "mae_gbp": 335.13546072084654,
+      "rmse_gbp": 1865.6600127029474,
+      "median_absolute_error_gbp": 130.6300227382272,
+      "r2": 0.3073576517344411,
+      "mean_prediction_gbp": 244.91531201694679,
+      "mean_actual_gbp": 318.7649300155521,
+      "prediction_bias_gbp": -73.84961799860532,
+      "zero_future_purchase_fraction": 0.6604458268532919,
+      "top_decile": {
+        "k": 193,
+        "capture": 0.5333900907557689,
+        "overlap_with_true_top10": 0.35751295336787564
+      }
+    },
+    {
+      "prediction_date": "2011-09-23",
+      "window_days": 30,
+      "method": "Ridge regression",
+      "n": 2006,
+      "mae_gbp": 368.08691001741755,
+      "rmse_gbp": 1532.6239529306126,
+      "median_absolute_error_gbp": 139.8517536106688,
+      "r2": 0.3336841128666461,
+      "mean_prediction_gbp": 275.2355101668582,
+      "mean_actual_gbp": 347.26521435692916,
+      "prediction_bias_gbp": -72.02970419007107,
+      "zero_future_purchase_fraction": 0.634097706879362,
+      "top_decile": {
+        "k": 201,
+        "capture": 0.45128537608243946,
+        "overlap_with_true_top10": 0.2736318407960199
+      }
+    },
+    {
+      "prediction_date": "2011-10-23",
+      "window_days": 30,
+      "method": "Ridge regression",
+      "n": 2371,
+      "mae_gbp": 341.88329063096717,
+      "rmse_gbp": 1027.201499442986,
+      "median_absolute_error_gbp": 147.70613063482773,
+      "r2": 0.31668209708060424,
+      "mean_prediction_gbp": 273.01087420249894,
+      "mean_actual_gbp": 341.3366216786166,
+      "prediction_bias_gbp": -68.32574747611766,
+      "zero_future_purchase_fraction": 0.5790805567271193,
+      "top_decile": {
+        "k": 238,
+        "capture": 0.4534325592002157,
+        "overlap_with_true_top10": 0.37815126050420167
+      }
+    },
+    {
+      "prediction_date": "2011-08-24",
+      "window_days": 30,
+      "method": "Random Forest",
+      "n": 1929,
+      "mae_gbp": 344.5988405021022,
+      "rmse_gbp": 1851.7756244790285,
+      "median_absolute_error_gbp": 126.45605722161729,
+      "r2": 0.317628687485184,
+      "mean_prediction_gbp": 255.2781427760604,
+      "mean_actual_gbp": 318.7649300155521,
+      "prediction_bias_gbp": -63.486787239491754,
+      "zero_future_purchase_fraction": 0.6604458268532919,
+      "top_decile": {
+        "k": 193,
+        "capture": 0.5318688292057758,
+        "overlap_with_true_top10": 0.3626943005181347
+      }
+    },
+    {
+      "prediction_date": "2011-09-23",
+      "window_days": 30,
+      "method": "Random Forest",
+      "n": 2006,
+      "mae_gbp": 361.4888748794893,
+      "rmse_gbp": 1447.387515353749,
+      "median_absolute_error_gbp": 126.45605722161729,
+      "r2": 0.4057371309121035,
+      "mean_prediction_gbp": 248.7908859732285,
+      "mean_actual_gbp": 347.26521435692916,
+      "prediction_bias_gbp": -98.47432838370074,
+      "zero_future_purchase_fraction": 0.634097706879362,
+      "top_decile": {
+        "k": 201,
+        "capture": 0.44701592425601777,
+        "overlap_with_true_top10": 0.2537313432835821
+      }
+    },
+    {
+      "prediction_date": "2011-10-23",
+      "window_days": 30,
+      "method": "Random Forest",
+      "n": 2371,
+      "mae_gbp": 337.61723977621267,
+      "rmse_gbp": 936.1400025385477,
+      "median_absolute_error_gbp": 126.45605722161729,
+      "r2": 0.4324643889825498,
+      "mean_prediction_gbp": 265.2731866421316,
+      "mean_actual_gbp": 341.3366216786166,
+      "prediction_bias_gbp": -76.06343503648502,
+      "zero_future_purchase_fraction": 0.5790805567271193,
+      "top_decile": {
+        "k": 238,
+        "capture": 0.43783612079107526,
+        "overlap_with_true_top10": 0.3445378151260504
+      }
+    },
+    {
+      "prediction_date": "2011-08-24",
+      "window_days": 60,
+      "method": "Always predict \u00a30",
+      "n": 1929,
+      "mae_gbp": 318.7649300155521,
+      "rmse_gbp": 2264.2529305683133,
+      "median_absolute_error_gbp": 0.0,
+      "r2": -0.020220184049791312,
+      "mean_prediction_gbp": 0.0,
+      "mean_actual_gbp": 318.7649300155521,
+      "prediction_bias_gbp": -318.7649300155521,
+      "zero_future_purchase_fraction": 0.6604458268532919,
+      "top_decile": {
+        "k": 193,
+        "capture": 0.0739423014451757,
+        "overlap_with_true_top10": 0.10362694300518134
+      }
+    },
+    {
+      "prediction_date": "2011-09-23",
+      "window_days": 60,
+      "method": "Always predict \u00a30",
+      "n": 2006,
+      "mae_gbp": 347.26521435692916,
+      "rmse_gbp": 1909.411501978825,
+      "median_absolute_error_gbp": 0.0,
+      "r2": -0.034208301803463126,
+      "mean_prediction_gbp": 0.0,
+      "mean_actual_gbp": 347.26521435692916,
+      "prediction_bias_gbp": -347.26521435692916,
+      "zero_future_purchase_fraction": 0.634097706879362,
+      "top_decile": {
+        "k": 201,
+        "capture": 0.15347936867535342,
+        "overlap_with_true_top10": 0.09950248756218906
+      }
+    },
+    {
+      "prediction_date": "2011-10-23",
+      "window_days": 60,
+      "method": "Always predict \u00a30",
+      "n": 2371,
+      "mae_gbp": 341.3366216786166,
+      "rmse_gbp": 1288.664870603944,
+      "median_absolute_error_gbp": 0.0,
+      "r2": -0.07545313372800222,
+      "mean_prediction_gbp": 0.0,
+      "mean_actual_gbp": 341.3366216786166,
+      "prediction_bias_gbp": -341.3366216786166,
+      "zero_future_purchase_fraction": 0.5790805567271193,
+      "top_decile": {
+        "k": 238,
+        "capture": 0.13384519707568354,
+        "overlap_with_true_top10": 0.1092436974789916
+      }
+    },
+    {
+      "prediction_date": "2011-08-24",
+      "window_days": 60,
+      "method": "Historical spending baseline",
+      "n": 1929,
+      "mae_gbp": 341.0403211508554,
+      "rmse_gbp": 1768.183769081457,
+      "median_absolute_error_gbp": 147.14,
+      "r2": 0.37784465908015374,
+      "mean_prediction_gbp": 317.6184865215137,
+      "mean_actual_gbp": 318.7649300155521,
+      "prediction_bias_gbp": -1.1464434940383617,
+      "zero_future_purchase_fraction": 0.6604458268532919,
+      "top_decile": {
+        "k": 193,
+        "capture": 0.5909524765548342,
+        "overlap_with_true_top10": 0.43523316062176165
+      }
+    },
+    {
+      "prediction_date": "2011-09-23",
+      "window_days": 60,
+      "method": "Historical spending baseline",
+      "n": 2006,
+      "mae_gbp": 380.5435795114656,
+      "rmse_gbp": 1498.2417996308632,
+      "median_absolute_error_gbp": 170.065,
+      "r2": 0.3632444051345305,
+      "mean_prediction_gbp": 378.1833302592224,
+      "mean_actual_gbp": 347.26521435692916,
+      "prediction_bias_gbp": 30.918115902293113,
+      "zero_future_purchase_fraction": 0.634097706879362,
+      "top_decile": {
+        "k": 201,
+        "capture": 0.5289271525140996,
+        "overlap_with_true_top10": 0.35323383084577115
+      }
+    },
+    {
+      "prediction_date": "2011-10-23",
+      "window_days": 60,
+      "method": "Historical spending baseline",
+      "n": 2371,
+      "mae_gbp": 352.8853378321383,
+      "rmse_gbp": 1125.1921628682737,
+      "median_absolute_error_gbp": 173.46999999999997,
+      "r2": 0.18009240920853464,
+      "mean_prediction_gbp": 386.8594415858288,
+      "mean_actual_gbp": 341.3366216786166,
+      "prediction_bias_gbp": 45.52281990721215,
+      "zero_future_purchase_fraction": 0.5790805567271193,
+      "top_decile": {
+        "k": 238,
+        "capture": 0.48978231593655697,
+        "overlap_with_true_top10": 0.44537815126050423
+      }
+    },
+    {
+      "prediction_date": "2011-08-24",
+      "window_days": 60,
+      "method": "Ridge regression",
+      "n": 1929,
+      "mae_gbp": 317.5799205407398,
+      "rmse_gbp": 1854.703252111397,
+      "median_absolute_error_gbp": 110.55208613728169,
+      "r2": 0.31546934563782036,
+      "mean_prediction_gbp": 233.0893459238524,
+      "mean_actual_gbp": 318.7649300155521,
+      "prediction_bias_gbp": -85.6755840916997,
+      "zero_future_purchase_fraction": 0.6604458268532919,
+      "top_decile": {
+        "k": 193,
+        "capture": 0.5716802579551667,
+        "overlap_with_true_top10": 0.42487046632124353
+      }
+    },
+    {
+      "prediction_date": "2011-09-23",
+      "window_days": 60,
+      "method": "Ridge regression",
+      "n": 2006,
+      "mae_gbp": 339.0742131738442,
+      "rmse_gbp": 1433.2045613110495,
+      "median_absolute_error_gbp": 117.91761277417987,
+      "r2": 0.41732643633483446,
+      "mean_prediction_gbp": 265.2929476493211,
+      "mean_actual_gbp": 347.26521435692916,
+      "prediction_bias_gbp": -81.97226670760816,
+      "zero_future_purchase_fraction": 0.634097706879362,
+      "top_decile": {
+        "k": 201,
+        "capture": 0.5301007435939921,
+        "overlap_with_true_top10": 0.36318407960199006
+      }
+    },
+    {
+      "prediction_date": "2011-10-23",
+      "window_days": 60,
+      "method": "Ridge regression",
+      "n": 2371,
+      "mae_gbp": 303.9212293454905,
+      "rmse_gbp": 899.0439964233631,
+      "median_absolute_error_gbp": 122.5585794338128,
+      "r2": 0.47655217381166703,
+      "mean_prediction_gbp": 265.62193304725736,
+      "mean_actual_gbp": 341.3366216786166,
+      "prediction_bias_gbp": -75.71468863135925,
+      "zero_future_purchase_fraction": 0.5790805567271193,
+      "top_decile": {
+        "k": 238,
+        "capture": 0.5059902635720914,
+        "overlap_with_true_top10": 0.4579831932773109
+      }
+    },
+    {
+      "prediction_date": "2011-08-24",
+      "window_days": 60,
+      "method": "Random Forest",
+      "n": 1929,
+      "mae_gbp": 325.49539261710333,
+      "rmse_gbp": 1875.283329515098,
+      "median_absolute_error_gbp": 111.25164094841207,
+      "r2": 0.3001937445807089,
+      "mean_prediction_gbp": 242.2219335207111,
+      "mean_actual_gbp": 318.7649300155521,
+      "prediction_bias_gbp": -76.54299649484098,
+      "zero_future_purchase_fraction": 0.6604458268532919,
+      "top_decile": {
+        "k": 193,
+        "capture": 0.586292480755534,
+        "overlap_with_true_top10": 0.42487046632124353
+      }
+    },
+    {
+      "prediction_date": "2011-09-23",
+      "window_days": 60,
+      "method": "Random Forest",
+      "n": 2006,
+      "mae_gbp": 340.7313282649496,
+      "rmse_gbp": 1425.950570108589,
+      "median_absolute_error_gbp": 117.699842298828,
+      "r2": 0.4232097729234725,
+      "mean_prediction_gbp": 252.60969605788748,
+      "mean_actual_gbp": 347.26521435692916,
+      "prediction_bias_gbp": -94.65551829904172,
+      "zero_future_purchase_fraction": 0.634097706879362,
+      "top_decile": {
+        "k": 201,
+        "capture": 0.531346756414693,
+        "overlap_with_true_top10": 0.3383084577114428
+      }
+    },
+    {
+      "prediction_date": "2011-10-23",
+      "window_days": 60,
+      "method": "Random Forest",
+      "n": 2371,
+      "mae_gbp": 306.4806329469574,
+      "rmse_gbp": 788.918644954403,
+      "median_absolute_error_gbp": 125.60192607869966,
+      "r2": 0.5969341997607168,
+      "mean_prediction_gbp": 252.78022833756899,
+      "mean_actual_gbp": 341.3366216786166,
+      "prediction_bias_gbp": -88.55639334104764,
+      "zero_future_purchase_fraction": 0.5790805567271193,
+      "top_decile": {
+        "k": 238,
+        "capture": 0.49952498373520143,
+        "overlap_with_true_top10": 0.42857142857142855
+      }
+    },
+    {
+      "prediction_date": "2011-08-24",
+      "window_days": 90,
+      "method": "Always predict \u00a30",
+      "n": 1929,
+      "mae_gbp": 318.7649300155521,
+      "rmse_gbp": 2264.2529305683133,
+      "median_absolute_error_gbp": 0.0,
+      "r2": -0.020220184049791312,
+      "mean_prediction_gbp": 0.0,
+      "mean_actual_gbp": 318.7649300155521,
+      "prediction_bias_gbp": -318.7649300155521,
+      "zero_future_purchase_fraction": 0.6604458268532919,
+      "top_decile": {
+        "k": 193,
+        "capture": 0.0739423014451757,
+        "overlap_with_true_top10": 0.10362694300518134
+      }
+    },
+    {
+      "prediction_date": "2011-09-23",
+      "window_days": 90,
+      "method": "Always predict \u00a30",
+      "n": 2006,
+      "mae_gbp": 347.26521435692916,
+      "rmse_gbp": 1909.411501978825,
+      "median_absolute_error_gbp": 0.0,
+      "r2": -0.034208301803463126,
+      "mean_prediction_gbp": 0.0,
+      "mean_actual_gbp": 347.26521435692916,
+      "prediction_bias_gbp": -347.26521435692916,
+      "zero_future_purchase_fraction": 0.634097706879362,
+      "top_decile": {
+        "k": 201,
+        "capture": 0.15347936867535342,
+        "overlap_with_true_top10": 0.09950248756218906
+      }
+    },
+    {
+      "prediction_date": "2011-10-23",
+      "window_days": 90,
+      "method": "Always predict \u00a30",
+      "n": 2371,
+      "mae_gbp": 341.3366216786166,
+      "rmse_gbp": 1288.664870603944,
+      "median_absolute_error_gbp": 0.0,
+      "r2": -0.07545313372800222,
+      "mean_prediction_gbp": 0.0,
+      "mean_actual_gbp": 341.3366216786166,
+      "prediction_bias_gbp": -341.3366216786166,
+      "zero_future_purchase_fraction": 0.5790805567271193,
+      "top_decile": {
+        "k": 238,
+        "capture": 0.13384519707568354,
+        "overlap_with_true_top10": 0.1092436974789916
+      }
+    },
+    {
+      "prediction_date": "2011-08-24",
+      "window_days": 90,
+      "method": "Historical spending baseline",
+      "n": 1929,
+      "mae_gbp": 322.5671088646967,
+      "rmse_gbp": 1677.4482015270264,
+      "median_absolute_error_gbp": 130.23333333333332,
+      "r2": 0.4400589968712415,
+      "mean_prediction_gbp": 321.5416849835839,
+      "mean_actual_gbp": 318.7649300155521,
+      "prediction_bias_gbp": 2.7767549680317956,
+      "zero_future_purchase_fraction": 0.6604458268532919,
+      "top_decile": {
+        "k": 193,
+        "capture": 0.6179515270470666,
+        "overlap_with_true_top10": 0.48704663212435234
+      }
+    },
+    {
+      "prediction_date": "2011-09-23",
+      "window_days": 90,
+      "method": "Historical spending baseline",
+      "n": 2006,
+      "mae_gbp": 356.849711033566,
+      "rmse_gbp": 1343.2559870372454,
+      "median_absolute_error_gbp": 156.5,
+      "r2": 0.4881690770843219,
+      "mean_prediction_gbp": 341.97995363908274,
+      "mean_actual_gbp": 347.26521435692916,
+      "prediction_bias_gbp": -5.285260717846471,
+      "zero_future_purchase_fraction": 0.634097706879362,
+      "top_decile": {
+        "k": 201,
+        "capture": 0.5734236729832111,
+        "overlap_with_true_top10": 0.3781094527363184
+      }
+    },
+    {
+      "prediction_date": "2011-10-23",
+      "window_days": 90,
+      "method": "Historical spending baseline",
+      "n": 2371,
+      "mae_gbp": 321.2881036131027,
+      "rmse_gbp": 917.0432380748797,
+      "median_absolute_error_gbp": 153.07666666666668,
+      "r2": 0.45538307240010734,
+      "mean_prediction_gbp": 354.15376817095455,
+      "mean_actual_gbp": 341.3366216786166,
+      "prediction_bias_gbp": 12.817146492337976,
+      "zero_future_purchase_fraction": 0.5790805567271193,
+      "top_decile": {
+        "k": 238,
+        "capture": 0.5187831626216796,
+        "overlap_with_true_top10": 0.4789915966386555
+      }
+    },
+    {
+      "prediction_date": "2011-08-24",
+      "window_days": 90,
+      "method": "Ridge regression",
+      "n": 1929,
+      "mae_gbp": 302.20562933941835,
+      "rmse_gbp": 1758.5915186869527,
+      "median_absolute_error_gbp": 98.11866766616535,
+      "r2": 0.3845766315356183,
+      "mean_prediction_gbp": 234.8663672942794,
+      "mean_actual_gbp": 318.7649300155521,
+      "prediction_bias_gbp": -83.89856272127268,
+      "zero_future_purchase_fraction": 0.6604458268532919,
+      "top_decile": {
+        "k": 193,
+        "capture": 0.6223910633568144,
+        "overlap_with_true_top10": 0.49740932642487046
+      }
+    },
+    {
+      "prediction_date": "2011-09-23",
+      "window_days": 90,
+      "method": "Ridge regression",
+      "n": 2006,
+      "mae_gbp": 326.79281347497374,
+      "rmse_gbp": 1377.868099334884,
+      "median_absolute_error_gbp": 103.336735319997,
+      "r2": 0.46145221789244184,
+      "mean_prediction_gbp": 246.10259871078406,
+      "mean_actual_gbp": 347.26521435692916,
+      "prediction_bias_gbp": -101.16261564614516,
+      "zero_future_purchase_fraction": 0.634097706879362,
+      "top_decile": {
+        "k": 201,
+        "capture": 0.5786969231540876,
+        "overlap_with_true_top10": 0.40298507462686567
+      }
+    },
+    {
+      "prediction_date": "2011-10-23",
+      "window_days": 90,
+      "method": "Ridge regression",
+      "n": 2371,
+      "mae_gbp": 287.4992615684939,
+      "rmse_gbp": 806.0203228446256,
+      "median_absolute_error_gbp": 108.0155331807798,
+      "r2": 0.579269986424414,
+      "mean_prediction_gbp": 252.09494719153972,
+      "mean_actual_gbp": 341.3366216786166,
+      "prediction_bias_gbp": -89.2416744870769,
+      "zero_future_purchase_fraction": 0.5790805567271193,
+      "top_decile": {
+        "k": 238,
+        "capture": 0.5146835301363769,
+        "overlap_with_true_top10": 0.47478991596638653
+      }
+    },
+    {
+      "prediction_date": "2011-08-24",
+      "window_days": 90,
+      "method": "Random Forest",
+      "n": 1929,
+      "mae_gbp": 306.29196927281,
+      "rmse_gbp": 1851.0306010345355,
+      "median_absolute_error_gbp": 105.8581449870013,
+      "r2": 0.31817765286777244,
+      "mean_prediction_gbp": 235.8073141315461,
+      "mean_actual_gbp": 318.7649300155521,
+      "prediction_bias_gbp": -82.95761588400599,
+      "zero_future_purchase_fraction": 0.6604458268532919,
+      "top_decile": {
+        "k": 193,
+        "capture": 0.6106779901790144,
+        "overlap_with_true_top10": 0.48186528497409326
+      }
+    },
+    {
+      "prediction_date": "2011-09-23",
+      "window_days": 90,
+      "method": "Random Forest",
+      "n": 2006,
+      "mae_gbp": 328.7413126136134,
+      "rmse_gbp": 1398.3012297623127,
+      "median_absolute_error_gbp": 118.4109779491373,
+      "r2": 0.4453609668668126,
+      "mean_prediction_gbp": 240.9493905223427,
+      "mean_actual_gbp": 347.26521435692916,
+      "prediction_bias_gbp": -106.31582383458652,
+      "zero_future_purchase_fraction": 0.634097706879362,
+      "top_decile": {
+        "k": 201,
+        "capture": 0.570423058668845,
+        "overlap_with_true_top10": 0.3781094527363184
+      }
+    },
+    {
+      "prediction_date": "2011-10-23",
+      "window_days": 90,
+      "method": "Random Forest",
+      "n": 2371,
+      "mae_gbp": 285.9562786718218,
+      "rmse_gbp": 729.8267162881594,
+      "median_absolute_error_gbp": 125.97537637471237,
+      "r2": 0.6550540704508838,
+      "mean_prediction_gbp": 244.7663563018101,
+      "mean_actual_gbp": 341.3366216786166,
+      "prediction_bias_gbp": -96.57026537680647,
+      "zero_future_purchase_fraction": 0.5790805567271193,
+      "top_decile": {
+        "k": 238,
+        "capture": 0.5237667960078493,
+        "overlap_with_true_top10": 0.4789915966386555
+      }
+    }
+  ],
+  "robustness": [
+    {
+      "window_days": 30,
+      "method": "Always predict \u00a30",
+      "test_MAE_gbp": 336.3179035838884,
+      "mae_excluding_top_1pct_outcomes_gbp": 212.98826337712276,
+      "top1pct_threshold_actual_future_spending_gbp": 4091.401,
+      "excluded_rows": 64
+    },
+    {
+      "window_days": 30,
+      "method": "Historical spending baseline",
+      "test_MAE_gbp": 418.09023993022515,
+      "mae_excluding_top_1pct_outcomes_gbp": 341.3951558795258,
+      "top1pct_threshold_actual_future_spending_gbp": 4091.401,
+      "excluded_rows": 64
+    },
+    {
+      "window_days": 30,
+      "method": "Ridge regression",
+      "test_MAE_gbp": 348.15476170495964,
+      "mae_excluding_top_1pct_outcomes_gbp": 264.8661408035549,
+      "top1pct_threshold_actual_future_spending_gbp": 4091.401,
+      "excluded_rows": 64
+    },
+    {
+      "window_days": 30,
+      "method": "Random Forest",
+      "test_MAE_gbp": 347.3467050184286,
+      "mae_excluding_top_1pct_outcomes_gbp": 265.0874892768649,
+      "top1pct_threshold_actual_future_spending_gbp": 4091.401,
+      "excluded_rows": 64
+    },
+    {
+      "window_days": 60,
+      "method": "Always predict \u00a30",
+      "test_MAE_gbp": 336.3179035838884,
+      "mae_excluding_top_1pct_outcomes_gbp": 212.98826337712276,
+      "top1pct_threshold_actual_future_spending_gbp": 4091.401,
+      "excluded_rows": 64
+    },
+    {
+      "window_days": 60,
+      "method": "Historical spending baseline",
+      "test_MAE_gbp": 358.06031335236287,
+      "mae_excluding_top_1pct_outcomes_gbp": 284.9211880807434,
+      "top1pct_threshold_actual_future_spending_gbp": 4091.401,
+      "excluded_rows": 64
+    },
+    {
+      "window_days": 60,
+      "method": "Ridge regression",
+      "test_MAE_gbp": 319.2819177177254,
+      "mae_excluding_top_1pct_outcomes_gbp": 242.17359436388674,
+      "top1pct_threshold_actual_future_spending_gbp": 4091.401,
+      "excluded_rows": 64
+    },
+    {
+      "window_days": 60,
+      "method": "Random Forest",
+      "test_MAE_gbp": 323.19271131860404,
+      "mae_excluding_top_1pct_outcomes_gbp": 245.09556936243396,
+      "top1pct_threshold_actual_future_spending_gbp": 4091.401,
+      "excluded_rows": 64
+    },
+    {
+      "window_days": 90,
+      "method": "Always predict \u00a30",
+      "test_MAE_gbp": 336.3179035838884,
+      "mae_excluding_top_1pct_outcomes_gbp": 212.98826337712276,
+      "top1pct_threshold_actual_future_spending_gbp": 4091.401,
+      "excluded_rows": 64
+    },
+    {
+      "window_days": 90,
+      "method": "Historical spending baseline",
+      "test_MAE_gbp": 332.99184379955597,
+      "mae_excluding_top_1pct_outcomes_gbp": 263.0904107123785,
+      "top1pct_threshold_actual_future_spending_gbp": 4091.401,
+      "excluded_rows": 64
+    },
+    {
+      "window_days": 90,
+      "method": "Ridge regression",
+      "test_MAE_gbp": 304.4975883294377,
+      "mae_excluding_top_1pct_outcomes_gbp": 229.50696458249902,
+      "top1pct_threshold_actual_future_spending_gbp": 4091.401,
+      "excluded_rows": 64
+    },
+    {
+      "window_days": 90,
+      "method": "Random Forest",
+      "test_MAE_gbp": 305.7872848970898,
+      "mae_excluding_top_1pct_outcomes_gbp": 230.83736418788695,
+      "top1pct_threshold_actual_future_spending_gbp": 4091.401,
+      "excluded_rows": 64
+    }
+  ],
+  "exploratory_paired_bootstrap": {
+    "Historical spending baseline | 90 vs 30 days": {
+      "estimated_mae_difference_gbp": -85.09839613066919,
+      "bootstrap_95pct_interval_gbp": [
+        -106.99980762379155,
+        -66.02886675763682
+      ],
+      "bootstrap_resamples": 2000,
+      "cluster": "customer_id",
+      "interval_limitations": "Does not fully account for having only three final chronological cutoffs."
+    },
+    "Ridge regression | 90 vs 30 days": {
+      "estimated_mae_difference_gbp": -43.65717337552196,
+      "bootstrap_95pct_interval_gbp": [
+        -59.71654622470256,
+        -31.538072268935633
+      ],
+      "bootstrap_resamples": 2000,
+      "cluster": "customer_id",
+      "interval_limitations": "Does not fully account for having only three final chronological cutoffs."
+    },
+    "Random Forest | 90 vs 30 days": {
+      "estimated_mae_difference_gbp": -41.5594201213388,
+      "bootstrap_95pct_interval_gbp": [
+        -50.8252491307666,
+        -33.077219861264254
+      ],
+      "bootstrap_resamples": 2000,
+      "cluster": "customer_id",
+      "interval_limitations": "Does not fully account for having only three final chronological cutoffs."
+    },
+    "Ridge regression | versus zero | 30 days": {
+      "estimated_mae_difference_gbp": 11.836858121071321,
+      "bootstrap_95pct_interval_gbp": [
+        -18.22026941851014,
+        37.13898526893363
+      ],
+      "bootstrap_resamples": 2000,
+      "cluster": "customer_id",
+      "interval_limitations": "Does not fully account for having only three final chronological cutoffs."
+    },
+    "Random Forest | versus zero | 30 days": {
+      "estimated_mae_difference_gbp": 11.02880143454027,
+      "bootstrap_95pct_interval_gbp": [
+        -15.564427409362036,
+        34.1890889539328
+      ],
+      "bootstrap_resamples": 2000,
+      "cluster": "customer_id",
+      "interval_limitations": "Does not fully account for having only three final chronological cutoffs."
+    },
+    "Ridge regression | versus zero | 60 days": {
+      "estimated_mae_difference_gbp": -17.035985866162964,
+      "bootstrap_95pct_interval_gbp": [
+        -46.92223236839131,
+        7.82214886794584
+      ],
+      "bootstrap_resamples": 2000,
+      "cluster": "customer_id",
+      "interval_limitations": "Does not fully account for having only three final chronological cutoffs."
+    },
+    "Random Forest | versus zero | 60 days": {
+      "estimated_mae_difference_gbp": -13.125192265284312,
+      "bootstrap_95pct_interval_gbp": [
+        -39.55196373721208,
+        9.362415478585373
+      ],
+      "bootstrap_resamples": 2000,
+      "cluster": "customer_id",
+      "interval_limitations": "Does not fully account for having only three final chronological cutoffs."
+    },
+    "Ridge regression | versus zero | 90 days": {
+      "estimated_mae_difference_gbp": -31.820315254450637,
+      "bootstrap_95pct_interval_gbp": [
+        -61.087953008617376,
+        -7.4142745113831605
+      ],
+      "bootstrap_resamples": 2000,
+      "cluster": "customer_id",
+      "interval_limitations": "Does not fully account for having only three final chronological cutoffs."
+    },
+    "Random Forest | versus zero | 90 days": {
+      "estimated_mae_difference_gbp": -30.530618686798537,
+      "bootstrap_95pct_interval_gbp": [
+        -59.34330996408444,
+        -6.795586543895788
+      ],
+      "bootstrap_resamples": 2000,
+      "cluster": "customer_id",
+      "interval_limitations": "Does not fully account for having only three final chronological cutoffs."
+    },
+    "Random Forest vs Ridge | 90 days": {
+      "estimated_mae_difference_gbp": 1.2896965676520993,
+      "bootstrap_95pct_interval_gbp": [
+        -5.121927189073743,
+        7.915533686163035
+      ],
+      "bootstrap_resamples": 2000,
+      "cluster": "customer_id",
+      "interval_limitations": "Does not fully account for having only three final chronological cutoffs."
+    }
+  },
+  "test_used_once": "M5 completed without tuning models after viewing outcomes",
+  "caveats": [
+    "Only three future chronological test cutoffs",
+    "Model selection based on validation MAE, not ranking capture",
+    "Customer profiles repeated at multiple dates; cluster bootstrap approximates within-customer dependence only",
+    "Gross positive sales, not net revenue or profit",
+    "Zero-spend method has no useful ranking. Its deterministic top-decile is not meaningful.",
+    "The 10% capture chart ranks customer-date profiles pooled across three test dates."
+  ]
+}

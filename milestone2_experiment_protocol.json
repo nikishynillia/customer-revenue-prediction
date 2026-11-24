@@ -1,0 +1,109 @@
+{
+  "research_question": "How Much Purchase History Is Needed to Predict Future Customer Revenue? A Comparison of Simple and Machine Learning Models",
+  "source": "Original Online Retail II workbook, two sheets, dates 2009-12-01 to 2011-12-09",
+  "status": "experimental design frozen at Milestone 2; features/models not built",
+  "target": "sum of positive quantity \u00d7 positive unit price across known customer transactions for 30 calendar days [cutoff, cutoff+30); GBP; gross recorded sales, not net of refunds",
+  "population": "customers with >=1 positive sale in [cutoff-90d, cutoff); all are evaluated at all history windows, even if 30d/60d inputs have zero purchases",
+  "features_to_generate_next_milestone": [
+    "30/60/90d positive sales total",
+    "30/60/90d invoice counts (customer ID + invoice)",
+    "purchase recency capped to window+1 days when no purchases",
+    "mean invoice value",
+    "distinct stock-code count"
+  ],
+  "history_windows_days": [
+    30,
+    60,
+    90
+  ],
+  "prediction_horizon_days": 30,
+  "snapshot_step_days": 30,
+  "snapshot_cutoffs": [
+    "2010-04-01",
+    "2010-05-01",
+    "2010-05-31",
+    "2010-06-30",
+    "2010-07-30",
+    "2010-08-29",
+    "2010-09-28",
+    "2010-10-28",
+    "2010-11-27",
+    "2010-12-27",
+    "2011-01-26",
+    "2011-02-25",
+    "2011-03-27",
+    "2011-04-26",
+    "2011-05-26",
+    "2011-06-25",
+    "2011-07-25",
+    "2011-08-24",
+    "2011-09-23",
+    "2011-10-23"
+  ],
+  "split_cutoffs": {
+    "train": [
+      "2010-04-01",
+      "2010-05-01",
+      "2010-05-31",
+      "2010-06-30",
+      "2010-07-30",
+      "2010-08-29",
+      "2010-09-28",
+      "2010-10-28",
+      "2010-11-27",
+      "2010-12-27",
+      "2011-01-26",
+      "2011-02-25",
+      "2011-03-27",
+      "2011-04-26"
+    ],
+    "validation": [
+      "2011-05-26",
+      "2011-06-25",
+      "2011-07-25"
+    ],
+    "test": [
+      "2011-08-24",
+      "2011-09-23",
+      "2011-10-23"
+    ]
+  },
+  "split_logic": "chronological by cutoff; last training label end <= first validation cutoff; last validation label end <= first test cutoff",
+  "baseline": "gross historical spend \u00d7 (30 / history_window_days), zero for no transactions within window",
+  "models": [
+    "baseline",
+    "Ridge regression (nonnegative clipped predictions)",
+    "RandomForestRegressor"
+  ],
+  "primary_metric": "MAE (GBP) on untouched chronological test snapshots",
+  "secondary_metrics": [
+    "RMSE and median absolute error for sensitivity to extreme buyers",
+    "top 10% predicted customer future revenue capture vs actual",
+    "mean error/bias and positive-outcome share"
+  ],
+  "fairness": [
+    "identical eligible snapshots at all 3 history windows",
+    "shared target, test snapshots and feature definitions",
+    "hyperparameters chosen with validation only",
+    "same historical information horizon for all compared models"
+  ],
+  "leakage_guards": [
+    "per snapshot feature date < cutoff and feature date >= cutoff-W",
+    "target date >= cutoff and < cutoff+30",
+    "no final test outcomes in feature fitting, tuning, scaling or feature selection",
+    "earlier outcome windows do not overlap subsequent split start",
+    "one snapshot row per customer/cutoff/window"
+  ],
+  "limitations": [
+    "Repeated customer snapshots correlated; account for dependence in uncertainty",
+    "Dataset is 2009-2011 UK retail with wholesale characteristics, not modern DTC advertising",
+    "Returns/cancellations excluded, so prediction target is gross positive invoiced sales not net realized revenue",
+    "Extreme single-line and customer spending outliers will be disclosed; robustness tests of prediction errors on and excluding top-1%-revenue customers may be informative",
+    "Customer IDs missing on many rows; population restricted to identifiable customers",
+    "Historical purchasing of new customers / customer churn outside 90-day activity window not evaluated"
+  ],
+  "disclosure": [
+    "No ML fitting or trained results in Milestone 2",
+    "Source CSV records include customer IDs present in the public dataset; do not upload proprietary customer data"
+  ]
+}

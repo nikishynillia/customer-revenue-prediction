@@ -1,0 +1,25 @@
+{
+  "verified": true,
+  "prediction_rows": 18918,
+  "test_profiles_per_history_window": 6306,
+  "verified_windows": [
+    30,
+    60,
+    90
+  ],
+  "verified_methods": [
+    "Always predict \u00a30",
+    "Historical spending baseline",
+    "Ridge regression",
+    "Random Forest"
+  ],
+  "checked": [
+    "every test MAE",
+    "every test RMSE",
+    "every test R2",
+    "all per-date MAEs",
+    "cohort and outcome total",
+    "no fitting in M5 script"
+  ],
+  "limitations": "Replays outputs, not a substitute for independent rerunning full source-to-model pipeline."
+}

@@ -1,0 +1,29 @@
+Loaded 29,339 training and 5,980 validation customer profiles x3; ignored 18918 final test rows.
+30-day baseline: MAE 304.05
+30-day Ridge regression {'alpha': 1.0}: MAE 270.27; RMSE 999.82; top10 capture 0.502; 0.0s
+30-day Ridge regression {'alpha': 100.0}: MAE 270.18; RMSE 1000.18; top10 capture 0.502; 0.0s
+30-day Ridge regression {'alpha': 10000.0}: MAE 278.86; RMSE 1048.09; top10 capture 0.504; 0.0s
+30-day Random Forest {'max_depth': 10, 'min_samples_leaf': 10}: MAE 264.05; RMSE 932.12; top10 capture 0.508; 0.9s
+30-day Random Forest {'max_depth': 16, 'min_samples_leaf': 20}: MAE 264.72; RMSE 955.64; top10 capture 0.508; 1.1s
+30-day Random Forest {'max_depth': 12, 'min_samples_leaf': 50}: MAE 268.30; RMSE 974.32; top10 capture 0.509; 0.8s
+30-day Random Forest {'max_depth': 16, 'min_samples_leaf': 50}: MAE 268.24; RMSE 974.32; top10 capture 0.509; 0.9s
+Completed 30-day history window.
+60-day baseline: MAE 278.25
+60-day Ridge regression {'alpha': 1.0}: MAE 248.78; RMSE 962.74; top10 capture 0.551; 0.0s
+60-day Ridge regression {'alpha': 100.0}: MAE 248.70; RMSE 963.02; top10 capture 0.551; 0.0s
+60-day Ridge regression {'alpha': 10000.0}: MAE 255.74; RMSE 1008.01; top10 capture 0.546; 0.0s
+60-day Random Forest {'max_depth': 10, 'min_samples_leaf': 10}: MAE 241.99; RMSE 890.88; top10 capture 0.554; 1.4s
+60-day Random Forest {'max_depth': 16, 'min_samples_leaf': 20}: MAE 243.86; RMSE 926.45; top10 capture 0.551; 1.8s
+60-day Random Forest {'max_depth': 12, 'min_samples_leaf': 50}: MAE 245.91; RMSE 925.29; top10 capture 0.555; 1.5s
+60-day Random Forest {'max_depth': 16, 'min_samples_leaf': 50}: MAE 245.68; RMSE 925.31; top10 capture 0.554; 1.6s
+Completed 60-day history window.
+90-day baseline: MAE 261.49
+90-day Ridge regression {'alpha': 1.0}: MAE 232.24; RMSE 919.47; top10 capture 0.566; 0.0s
+90-day Ridge regression {'alpha': 100.0}: MAE 232.24; RMSE 920.22; top10 capture 0.566; 0.0s
+90-day Ridge regression {'alpha': 10000.0}: MAE 241.49; RMSE 980.77; top10 capture 0.566; 0.0s
+90-day Random Forest {'max_depth': 10, 'min_samples_leaf': 10}: MAE 233.00; RMSE 910.43; top10 capture 0.575; 1.6s
+90-day Random Forest {'max_depth': 16, 'min_samples_leaf': 20}: MAE 231.85; RMSE 902.96; top10 capture 0.573; 2.2s
+90-day Random Forest {'max_depth': 12, 'min_samples_leaf': 50}: MAE 232.50; RMSE 888.77; top10 capture 0.574; 1.8s
+90-day Random Forest {'max_depth': 16, 'min_samples_leaf': 50}: MAE 232.50; RMSE 888.78; top10 capture 0.574; 2.1s
+Completed 90-day history window.
+Finished milestone 4 in 19.0s. NO FINAL TEST evaluated.

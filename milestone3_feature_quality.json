@@ -1,0 +1,175 @@
+{
+  "milestone": "3",
+  "completed": true,
+  "original_clean_sales_rows": 791045,
+  "source_customers": 5878,
+  "cutoff_dates": 20,
+  "customer_date_profiles": 41625,
+  "all_history_window_rows": 124875,
+  "customer_date_profiles_by_split": {
+    "train": 29339,
+    "validation": 5980,
+    "test": 6306
+  },
+  "positive_future_buyers_by_split": {
+    "train": 8951,
+    "validation": 1871,
+    "test": 2387
+  },
+  "zero_history_profiles_by_window": {
+    "30": 21175,
+    "60": 8770,
+    "90": 0
+  },
+  "total_next_30d_sales_gbp_by_split": {
+    "train": "6806857.2640",
+    "validation": "1418528.2700",
+    "test": "2120820.7000"
+  },
+  "source_date_leakage_check": "passed: all feature observations are before cutoff; all outcomes at/after cutoff and strictly before cutoff+30d",
+  "same_cohort_and_target_checks": "passed: all history lengths based on one common customer-date record",
+  "schedule_reconciliation": "passed: all 20 cutoffs match M2 counts, buyers and actual future gross sales exactly",
+  "no_ml_training": true,
+  "split_details": [
+    {
+      "date": "2010-04-01",
+      "split": "train",
+      "profiles": 1803,
+      "future_buyers": 584,
+      "future_sales_gbp": "440615.4410"
+    },
+    {
+      "date": "2010-05-01",
+      "split": "train",
+      "profiles": 1959,
+      "future_buyers": 622,
+      "future_sales_gbp": "443912.8700"
+    },
+    {
+      "date": "2010-05-31",
+      "split": "train",
+      "profiles": 2033,
+      "future_buyers": 639,
+      "future_sales_gbp": "437192.7800"
+    },
+    {
+      "date": "2010-06-30",
+      "split": "train",
+      "profiles": 2028,
+      "future_buyers": 640,
+      "future_sales_gbp": "477095.2000"
+    },
+    {
+      "date": "2010-07-30",
+      "split": "train",
+      "profiles": 2006,
+      "future_buyers": 600,
+      "future_sales_gbp": "454946.9200"
+    },
+    {
+      "date": "2010-08-29",
+      "split": "train",
+      "profiles": 1937,
+      "future_buyers": 644,
+      "future_sales_gbp": "507561.1610"
+    },
+    {
+      "date": "2010-09-28",
+      "split": "train",
+      "profiles": 1985,
+      "future_buyers": 781,
+      "future_sales_gbp": "682936.3700"
+    },
+    {
+      "date": "2010-10-28",
+      "split": "train",
+      "profiles": 2447,
+      "future_buyers": 972,
+      "future_sales_gbp": "840088.1020"
+    },
+    {
+      "date": "2010-11-27",
+      "split": "train",
+      "profiles": 2840,
+      "future_buyers": 796,
+      "future_sales_gbp": "623669.2000"
+    },
+    {
+      "date": "2010-12-27",
+      "split": "train",
+      "profiles": 2750,
+      "future_buyers": 486,
+      "future_sales_gbp": "332973.3600"
+    },
+    {
+      "date": "2011-01-26",
+      "split": "train",
+      "profiles": 2233,
+      "future_buyers": 532,
+      "future_sales_gbp": "369463.9900"
+    },
+    {
+      "date": "2011-02-25",
+      "split": "train",
+      "profiles": 1735,
+      "future_buyers": 473,
+      "future_sales_gbp": "334071.3500"
+    },
+    {
+      "date": "2011-03-27",
+      "split": "train",
+      "profiles": 1680,
+      "future_buyers": 505,
+      "future_sales_gbp": "350207.7800"
+    },
+    {
+      "date": "2011-04-26",
+      "split": "train",
+      "profiles": 1903,
+      "future_buyers": 677,
+      "future_sales_gbp": "512122.7400"
+    },
+    {
+      "date": "2011-05-26",
+      "split": "validation",
+      "profiles": 1980,
+      "future_buyers": 638,
+      "future_sales_gbp": "452216.5600"
+    },
+    {
+      "date": "2011-06-25",
+      "split": "validation",
+      "profiles": 2014,
+      "future_buyers": 593,
+      "future_sales_gbp": "425910.1200"
+    },
+    {
+      "date": "2011-07-25",
+      "split": "validation",
+      "profiles": 1986,
+      "future_buyers": 640,
+      "future_sales_gbp": "540401.5900"
+    },
+    {
+      "date": "2011-08-24",
+      "split": "test",
+      "profiles": 1929,
+      "future_buyers": 655,
+      "future_sales_gbp": "614897.5500"
+    },
+    {
+      "date": "2011-09-23",
+      "split": "test",
+      "profiles": 2006,
+      "future_buyers": 734,
+      "future_sales_gbp": "696614.0200"
+    },
+    {
+      "date": "2011-10-23",
+      "split": "test",
+      "profiles": 2371,
+      "future_buyers": 998,
+      "future_sales_gbp": "809309.1300"
+    }
+  ]
+}

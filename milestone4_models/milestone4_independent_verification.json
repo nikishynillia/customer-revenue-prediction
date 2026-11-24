@@ -1,0 +1,127 @@
+{
+  "test_rows_ignored_without_parsing_outcomes": 18918,
+  "validation_replays": [
+    {
+      "window_days": 30,
+      "method": "Ridge regression",
+      "mae_gbp": 270.18291393560156,
+      "matches_saved_score": true
+    },
+    {
+      "window_days": 30,
+      "method": "Random Forest",
+      "mae_gbp": 264.0511044125133,
+      "matches_saved_score": true
+    },
+    {
+      "window_days": 60,
+      "method": "Ridge regression",
+      "mae_gbp": 248.6956178685023,
+      "matches_saved_score": true
+    },
+    {
+      "window_days": 60,
+      "method": "Random Forest",
+      "mae_gbp": 241.99002659103053,
+      "matches_saved_score": true
+    },
+    {
+      "window_days": 90,
+      "method": "Ridge regression",
+      "mae_gbp": 232.23701721701906,
+      "matches_saved_score": true
+    },
+    {
+      "window_days": 90,
+      "method": "Random Forest",
+      "mae_gbp": 231.84522084249784,
+      "matches_saved_score": true
+    }
+  ],
+  "all_checks_passed": true,
+  "zero_sales_sanity_baseline": {
+    "30": {
+      "mae_gbp": 237.21208528428093,
+      "no_future_purchase_pct": 68.7123745819398
+    },
+    "60": {
+      "mae_gbp": 237.21208528428093,
+      "no_future_purchase_pct": 68.7123745819398
+    },
+    "90": {
+      "mae_gbp": 237.21208528428093,
+      "no_future_purchase_pct": 68.7123745819398
+    }
+  },
+  "per_date_validation_mae": {
+    "30": [
+      {
+        "prediction_date": "2011-05-26",
+        "customer_profiles": 1980,
+        "baseline_mae_gbp": 291.4218737373737,
+        "ridge_mae_gbp": 254.49347120694273,
+        "forest_mae_gbp": 252.52854916038558
+      },
+      {
+        "prediction_date": "2011-06-25",
+        "customer_profiles": 2014,
+        "baseline_mae_gbp": 316.15329195630585,
+        "ridge_mae_gbp": 261.82874677322957,
+        "forest_mae_gbp": 246.61094533220611
+      },
+      {
+        "prediction_date": "2011-07-25",
+        "customer_profiles": 1986,
+        "baseline_mae_gbp": 304.3799949647533,
+        "ridge_mae_gbp": 294.2969065175562,
+        "forest_mae_gbp": 293.224890810777
+      }
+    ],
+    "60": [
+      {
+        "prediction_date": "2011-05-26",
+        "customer_profiles": 1980,
+        "baseline_mae_gbp": 268.91097499999995,
+        "ridge_mae_gbp": 236.1802101728909,
+        "forest_mae_gbp": 239.61146538888104
+      },
+      {
+        "prediction_date": "2011-06-25",
+        "customer_profiles": 2014,
+        "baseline_mae_gbp": 274.00477159880836,
+        "ridge_mae_gbp": 231.41756584754376,
+        "forest_mae_gbp": 225.47089643773313
+      },
+      {
+        "prediction_date": "2011-07-25",
+        "customer_profiles": 1986,
+        "baseline_mae_gbp": 291.87306394763345,
+        "ridge_mae_gbp": 278.69486459937906,
+        "forest_mae_gbp": 261.11343006988096
+      }
+    ],
+    "90": [
+      {
+        "prediction_date": "2011-05-26",
+        "customer_profiles": 1980,
+        "baseline_mae_gbp": 248.1536702020202,
+        "ridge_mae_gbp": 220.64444795232842,
+        "forest_mae_gbp": 223.2729490744754
+      },
+      {
+        "prediction_date": "2011-06-25",
+        "customer_profiles": 2014,
+        "baseline_mae_gbp": 252.2117661370407,
+        "ridge_mae_gbp": 213.91351905915764,
+        "forest_mae_gbp": 212.94297207802362
+      },
+      {
+        "prediction_date": "2011-07-25",
+        "customer_profiles": 1986,
+        "baseline_mae_gbp": 284.19101208459216,
+        "ridge_mae_gbp": 262.37639910726097,
+        "forest_mae_gbp": 259.5603402344089
+      }
+    ]
+  }
+}

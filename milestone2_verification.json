@@ -1,0 +1,181 @@
+{
+  "verification_passed": true,
+  "cleaned_rows": 791045,
+  "customers": 5878,
+  "distinct_customer_invoices": 36969,
+  "gross_recorded_positive_sales_gbp": "17431551.1780",
+  "top_10_line_values": [
+    {
+      "line_revenue_gbp": "168469.6000",
+      "invoice": "581483",
+      "stock_code": "23843",
+      "description": "PAPER CRAFT , LITTLE BIRDIE"
+    },
+    {
+      "line_revenue_gbp": "77183.6000",
+      "invoice": "541431",
+      "stock_code": "23166",
+      "description": "MEDIUM CERAMIC TOP STORAGE JAR"
+    },
+    {
+      "line_revenue_gbp": "38970.0000",
+      "invoice": "556444",
+      "stock_code": "22502",
+      "description": "PICNIC BASKET WICKER 60 PIECES"
+    },
+    {
+      "line_revenue_gbp": "15818.4000",
+      "invoice": "530715",
+      "stock_code": "84347",
+      "description": "ROTATING SILVER ANGELS T-LIGHT HLDR"
+    },
+    {
+      "line_revenue_gbp": "10953.5000",
+      "invoice": "502263",
+      "stock_code": "M",
+      "description": "Manual"
+    },
+    {
+      "line_revenue_gbp": "10468.8000",
+      "invoice": "524159",
+      "stock_code": "M",
+      "description": "Manual"
+    },
+    {
+      "line_revenue_gbp": "8985.6000",
+      "invoice": "496115",
+      "stock_code": "M",
+      "description": "Manual"
+    },
+    {
+      "line_revenue_gbp": "8925.0000",
+      "invoice": "511465",
+      "stock_code": "15044A",
+      "description": "PINK PAPER PARASOL "
+    },
+    {
+      "line_revenue_gbp": "8142.7500",
+      "invoice": "551697",
+      "stock_code": "POST",
+      "description": "POSTAGE"
+    },
+    {
+      "line_revenue_gbp": "7144.7200",
+      "invoice": "567423",
+      "stock_code": "23243",
+      "description": "SET OF TEA COFFEE SUGAR TINS PANTRY"
+    }
+  ],
+  "top_countries_by_lines": [
+    [
+      "United Kingdom",
+      711882
+    ],
+    [
+      "Germany",
+      16456
+    ],
+    [
+      "EIRE",
+      15579
+    ],
+    [
+      "France",
+      13544
+    ],
+    [
+      "Netherlands",
+      5086
+    ],
+    [
+      "Spain",
+      3674
+    ],
+    [
+      "Belgium",
+      3056
+    ],
+    [
+      "Switzerland",
+      3005
+    ]
+  ],
+  "top_stock_codes_by_lines": [
+    [
+      "85123A",
+      5081
+    ],
+    [
+      "22423",
+      3355
+    ],
+    [
+      "85099B",
+      3311
+    ],
+    [
+      "84879",
+      2718
+    ],
+    [
+      "20725",
+      2647
+    ],
+    [
+      "21212",
+      2608
+    ],
+    [
+      "47566",
+      2109
+    ],
+    [
+      "21034",
+      2092
+    ],
+    [
+      "20727",
+      2087
+    ],
+    [
+      "22383",
+      2073
+    ],
+    [
+      "21232",
+      1976
+    ],
+    [
+      "22382",
+      1962
+    ],
+    [
+      "22384",
+      1906
+    ],
+    [
+      "21754",
+      1894
+    ]
+  ],
+  "blank_invoice_or_sku_example_row_numbers": [],
+  "split_dates": {
+    "train": {
+      "first": "2010-04-01",
+      "last": "2011-04-26",
+      "snapshots": 14
+    },
+    "validation": {
+      "first": "2011-05-26",
+      "last": "2011-07-25",
+      "snapshots": 3
+    },
+    "test": {
+      "first": "2011-08-24",
+      "last": "2011-10-23",
+      "snapshots": 3
+    }
+  },
+  "automatic_temporal_checks": "PASSED (schema, positive sales, preserved provenance, overlap, cutoff coverage, split label boundaries)",
+  "not_checked_yet": "Feature-level leak tests must run in Milestone 3 on generated customer features; ML accuracy cannot be claimed at Milestone 2."
+}

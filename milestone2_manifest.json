@@ -1,0 +1,57 @@
+{
+  "online_retail_II.xlsx": {
+    "sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+    "bytes": 45622278,
+    "included_in_package": false
+  },
+  "milestone2_clean_design.py": {
+    "sha256": "4ab9804e12581a94d37f5ebf01cdfa3164466904cd6506ca9e35202ee1182500",
+    "bytes": 15524,
+    "included_in_package": true
+  },
+  "verify_milestone2.py": {
+    "sha256": "2ce382d58cb35d305f817ec6219c21ad80be0a276bee1f83e9115217f9005332",
+    "bytes": 3889,
+    "included_in_package": true
+  },
+  "milestone2_cleaning_and_design_report.md": {
+    "sha256": "38e97e0c516d0a455209b8470054b511c2771492b6a2483db9a3674670a39461",
+    "bytes": 7488,
+    "included_in_package": true
+  },
+  "research_roadmap_v2.md": {
+    "sha256": "e69b1143da3021b238e35b2e46d6060516b33c23e84f56e6f7278c9518a273b3",
+    "bytes": 4229,
+    "included_in_package": true
+  },
+  "online_retail_clean_sales_m2.csv.gz": {
+    "sha256": "b2673cfc07b49253cd954cac74823fff9ae0022a01c83fa59efdae33d4bb2899",
+    "bytes": 15071902,
+    "included_in_package": true
+  },
+  "online_retail_clean_sales_preview_1000.csv": {
+    "sha256": "54d43dc4fb33be2be0596e6ceb99ce9db659ab5eaf952beceea0e2607b671122",
+    "bytes": 109275,
+    "included_in_package": true
+  },
+  "milestone2_cutoff_schedule.csv": {
+    "sha256": "fc3b7b6f5bbd42ceb354c345765434175554a77aba92416e76d0e139a95cd0fe",
+    "bytes": 2317,
+    "included_in_package": true
+  },
+  "milestone2_quality_checks.json": {
+    "sha256": "529345bb9428f6874b6d9f08bf9fc2b28324955c5d297cffc149d002d22b588f",
+    "bytes": 10344,
+    "included_in_package": true
+  },
+  "milestone2_experiment_protocol.json": {
+    "sha256": "c793b7f9447a9ad5f350fad317e8bfc0ecd5c608b452788c1546a4df0d40f206",
+    "bytes": 4117,
+    "included_in_package": true
+  },
+  "milestone2_verification.json": {
+    "sha256": "fb587586188795f8444b92dd41d9ebbf8106e5d27aace0cc2b16f50044aa103b",
+    "bytes": 3348,
+    "included_in_package": true
+  }
+}
